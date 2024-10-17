@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="add-question-container">
+      <h2>Add Your Questions</h2>
+      <input type="text" id="question-input" placeholder="Enter your question">
+      <div id="answer-inputs">
+        <input type="text" class="answer-input" placeholder="Answer 1">
+        <input type="text" class="answer-input" placeholder="Answer 2">
+        <input type="text" class="answer-input" placeholder="Answer 3">
+        <input type="text" class="answer-input" placeholder="Answer 4">
+      </div>
+      <label for="correct-answer">Correct Answer:</label>
+      <select id="correct-answer">
+        <option value="0">Answer 1</option>
+        <option value="1">Answer 2</option>
+        <option value="2">Answer 3</option>
+        <option value="3">Answer 4</option>
+      </select>
+      <button id="add-question-btn" class="btn">Add Question</button>
+      <button id="start-quiz-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <div id="question-container" class="hide">
+      <div id="question">Question text</div>
+      <div id="answer-buttons" class="btn-container"></div>
+    </div>
+    <div id="score-container" class="hide">
+      <p>Your Score: <span id="score-value">0</span></p>
+      <button id="restart-btn" class="btn">Restart</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
